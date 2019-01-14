@@ -1,0 +1,87 @@
+<!doctype html>
+<!--
+Name: Stephen Olin
+Student No: B00021147
+Assignment 1: Responsive Website
+File: classes.html
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CLASSES</title>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet"> 
+</head>
+
+<body>
+<header> <a href="index.html"><img src="images/logo.jpg" class="logo" alt="Irish Calisthentics Academy Logo"></a>
+  <div class="topnav" id="myTopnav">
+     <a href="index.html">HOME</a>
+     <a href="about_me.html">MY STORY</a>
+     <a href="about_ica.html">ICA STORY</a>
+     <a href="contact.html">CONTACT</a>
+     <a href="gallery.html">GALLERY</a>
+     <a class="current_page" href="classes.html" >CLASSES</a>
+     <a href="workshop.html">WORKSHOPS</a>	    
+  	 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+     <i class="fa fa-bars"></i></a>
+  </div>
+</header>
+<main>
+  <h1 class="title">CLASSES</h1>
+  <p class="paragraph">Our classes are suitable for all fitness levels from beginners to advanced as we cover the most basics exercises and movements of Calisthenics to the more advanced. The classes are 1 hour long and drop in is available. (Minimum age required is 13 years old.)</p>
+  <table>
+    <tr>
+      <th> CLASS</th>
+      <th> DAY</th>
+      <th>TIME</th>
+    </tr>
+    <tr>
+      <td>Beginner</td>
+      <td> MON - FRI</td>
+      <td> 8:00 AM</td>
+    </tr>
+    <tr>
+      <td>Intermediate</td>
+      <td> MON - FRI</td>
+      <td>8:00 PM</td>
+    </tr>
+    <tr>
+      <td>Advanced</td>
+      <td>MON - FRI</td>
+      <td>9:00 PM</td>
+    </tr>
+    <tr>
+      <td>Strength and Conditioning</td>
+      <td>TUESDAY</td>
+      <td>10:00 AM</td>
+    </tr>
+    <tr>
+      <td>Movement and Mobility </td>
+      <td> WEDNESDAY</td>
+      <td>7:00 PM</td>
+    </tr>
+    <tr>
+      <td>Freestyle Training</td>
+      <td> SATURDAY</td>
+      <td>7:00 PM</td>
+    </tr>
+  </table>
+		<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+</main>
+<footer> <a href="sitemap.html">SITEMAP</a> <a href="disclaimer.html">DISCLAIMER</a> &copy; 2018 by Irish Calisthenics Academy <a href="https://www.instagram.com/irishcalisthenicsacademy/" target="_blank"><img src="images/iconmonstr-instagram-11-24.png" alt="instagram icon"></a> <a href="https://www.youtube.com/channel/UCJhtdDdmAl1wSZhczm3xQ8Q" target="_blank"><img src="images/iconmonstr-youtube-6-24.png" alt="youtube icon"></a> <a href="https://www.facebook.com/IrishCalisthenicsAcademy/" target="_blank"><img src="images/iconmonstr-facebook-4-24.png" alt="facebook icon"></a> </footer>
+</body>
+</html>

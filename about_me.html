@@ -1,0 +1,44 @@
+<!doctype html><!--
+Name: Stephen Olin
+Student No: B00021147
+Assignment 1: Responsive Website
+File: about_me.html
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MY STORY</title>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet"> 
+</head>
+
+<body>
+<header> <a href="index.html"><img src="images/logo.jpg" class="logo" alt="Irish Calisthentics Academy Logo"></a>
+  <div class="topnav" id="myTopnav"> <a href="index.html">HOME</a> <a class="current_page" href="about_me.html">MY STORY</a> <a href="about_ica.html">ICA STORY</a> <a href="contact.html">CONTACT</a> <a href="gallery.html">GALLERY</a> <a href="classes.html" >CLASSES</a> <a href="workshop.html">WORKSHOPS</a> <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a> </div>
+</header>
+<main>
+  <h1 class="title">MY STORY</h1>
+  <aside class="asideLeft"> <img src="images/Luke.jpg" alt="" class="profile"></aside>
+  <section class="sectionRight">
+    <h2>LUKE HAND</h2>
+    <h4 id="coach">Coach/Founder</h4>
+    <p>I'm a 26year-old personal trainer who was just sick of the same old weight training and wanted to try something new. That's how my Calisthenics journey began over one year ago. What I found when I first started was that there weren't many people teaching or educating anyone about Calisthenics or running classes on what to do or where to start. That's why I decided to put my personal training background and passion for Calisthenics together to open the IRISH CALISTHENICS ACADEMY</p>
+  </section>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+</main>
+<footer>&copy; 2018 by Irish Calisthenics Academy <a href="https://www.instagram.com/irishcalisthenicsacademy/" target="_blank"><img src="images/iconmonstr-instagram-11-24.png" alt="instagram icon"></a> <a href="https://www.youtube.com/channel/UCJhtdDdmAl1wSZhczm3xQ8Q" target="_blank"><img src="images/iconmonstr-youtube-6-24.png" alt="youtube icon"></a> <a href="https://www.facebook.com/IrishCalisthenicsAcademy/" target="_blank"><img src="images/iconmonstr-facebook-4-24.png" alt="facebook icon"></a><a href="sitemap.html">SITEMAP</a> <a href="disclaimer.html">DISCLAIMER</a> </footer>
+</body>
+</html>

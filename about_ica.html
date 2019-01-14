@@ -1,0 +1,55 @@
+<!doctype html>
+<!--
+Name: Stephen Olin
+Student No: B00021147
+Assignment 1: Responsive Website
+File: about_ica.html
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ICA STORY</title>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet"> 
+</head>
+
+<body>
+<header> <a href="index.html"><img src="images/logo.jpg" class="logo" alt="Irish Calisthentics Academy Logo"></a>
+  <div class="topnav" id="myTopnav"> <a href="index.html">HOME</a> <a href="about_me.html">MY STORY</a> <a class="current_page"  href="about_ica.html">ICA STORY</a> <a href="contact.html">CONTACT</a> <a href="gallery.html">GALLERY</a> <a href="classes.html" >CLASSES</a> <a href="workshop.html">WORKSHOPS</a> <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a> </div>
+</header>
+<main>
+  <h1 class="title">ICA STORY</h1>
+  <div class="aboutica-box"> </div>
+  <div id="about_us_container">
+    <div id="about_us_content">
+      <h4>PASSION FOR CALISTHENICS</h4>
+      <p> The Irish Calisthenics Academy was established through my passion for Calisthenics. I decided to put my knowledge and practice together to help others start their Calisthenics journey with a kickstart through the skills and techniques I have grown to master over the past two years. Join me as I continue to master the art of calisthenics teaching you the techniques I have learned along the way. </p>
+      <h4>WHAT IS CALISTHENICS</h4>
+      <p> So what exactly is calisthenics? <br>
+        Calisthenics is resistance training using your own bodyweight. Runnning, Jumping, Push-up, Pull-up are all basic forms of calisthenics.  It's designed to improve strength, flexibility, agility, balance, coordination, and aerobic conditioning. </p>
+    </div>
+    <div id="upcoming_events">
+      <div id="upcoming_events_dates">Next Workshop:<br>
+        Human Flag - 9.12.2018</div>
+      The human flag is one of the most difficult upper body exercises to do—without strong arm, shoulder, back, and core muscles, it is nearly impossible. But the challenge of the pose is also what makes it satisfying. With strength training and practice, completing a human flag is attainable.
+      <div id="upcoming_events_link"><a href="workshop.html">More Workshops</a></div>
+    </div>
+  </div>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+</main>
+<footer>&copy; 2018 by Irish Calisthenics Academy <a href="https://www.instagram.com/irishcalisthenicsacademy/" target="_blank"><img src="images/iconmonstr-instagram-11-24.png" alt="instagram icon"></a> <a href="https://www.youtube.com/channel/UCJhtdDdmAl1wSZhczm3xQ8Q" target="_blank"><img src="images/iconmonstr-youtube-6-24.png" alt="youtube icon"></a> <a href="https://www.facebook.com/IrishCalisthenicsAcademy/" target="_blank"><img src="images/iconmonstr-facebook-4-24.png" alt="facebook icon"></a><a href="sitemap.html">SITEMAP</a> <a href="disclaimer.html">DISCLAIMER</a> </footer>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<!--
+Name: Stephen Olin
+Student No: B00021147
+Assignment 1: Responsive Website
+File: index.html
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HOME</title>
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/stylesheet.css">
+<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet"> 
+</head>
+
+<body>
+<header> <a href="index.html"><img src="images/logo.jpg" class="logo" alt="Irish Calisthentics Academy Logo"></a>
+  <div class="topnav" id="myTopnav"> <a class="current_page" href="index.html">HOME</a> <a href="about_me.html">MY STORY</a> <a href="about_ica.html">ICA STORY</a> <a href="contact.html">CONTACT</a> <a href="gallery.html">GALLERY</a> <a href="classes.html" >CLASSES</a> <a href="workshop.html">WORKSHOPS</a> <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a> </div>
+</header>
+<main>
+  <div class="hero-box">
+    <h1>ABILITY IS LIMITLESS<br>
+      BE MORE DO MORE</h1>
+  </div>
+  <div class="container"><img src="images/handstand.jpg" alt="Person preforming a handstand against a wall" class="image">
+    <div class="overlay">
+      <div class="text"><a href="about_me.html">MY STORY</a></div>
+    </div>
+  </div>
+  <div class="container"><img src="images/ropes.jpg" alt="People using Gym Ropes" class="image">
+    <div class="overlay">
+      <div class="text"><a href="about_ica.html">ICA STORY</a></div>
+    </div>
+  </div>
+  <div class="container"><img src="images/classes.jpeg" alt="Person attempting a dead-lift" class="image">
+    <div class="overlay">
+      <div class="text"><a href="contact.html">CONTACT</a></div>
+    </div>
+  </div>
+  <div class="container"><img src="images/pullups.jpg" alt="Person on Pull-Up Bar" class="image">
+    <div class="overlay">
+      <div class="text"><a href="gallery.html">GALLERY</a></div>
+    </div>
+  </div>
+  <div class="container"><img src="images/rings.jpg" alt="Person holding Gym Rings" class="image">
+    <div class="overlay">
+      <div class="text"><a href="classes.html">CLASSES</a></div>
+    </div>
+  </div>
+  <div class="container"><img src="images/masterclass1.jpg" alt="Person on bar preforming dips" class="image">
+    <div class="overlay">
+      <div class="text"><a href="workshop.html">WORKSHOPS</a></div>
+    </div>
+  </div>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+</main>
+<footer>&copy; 2018 by Irish Calisthenics Academy <a href="https://www.instagram.com/irishcalisthenicsacademy/" target="_blank"><img src="images/iconmonstr-instagram-11-24.png" alt="instagram icon"></a> <a href="https://www.youtube.com/channel/UCJhtdDdmAl1wSZhczm3xQ8Q" target="_blank"><img src="images/iconmonstr-youtube-6-24.png" alt="youtube icon"></a> <a href="https://www.facebook.com/IrishCalisthenicsAcademy/" target="_blank"><img src="images/iconmonstr-facebook-4-24.png" alt="facebook icon"></a><a href="sitemap.html">SITEMAP</a> <a href="disclaimer.html">DISCLAIMER</a> </footer>
+</body>
+</html>

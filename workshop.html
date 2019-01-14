@@ -1,0 +1,59 @@
+<!doctype html>
+<!--
+Name: Stephen Olin
+Student No: B00021147
+Assignment 1: Responsive Website
+File: workshop.html
+-->
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WORKSHOPS</title>
+<link rel="stylesheet" href="css/stylesheet.css">
+<!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Boogaloo" rel="stylesheet"> 
+</head>
+
+<body>
+<header> <a href="index.html"><img src="images/logo.jpg" class="logo" alt="Irish Calisthentics Academy Logo"></a>
+  <div class="topnav" id="myTopnav"> <a href="index.html">HOME</a> <a href="about_me.html">MY STORY</a> <a href="about_ica.html">ICA STORY</a> <a href="contact.html">CONTACT</a> <a href="gallery.html">GALLERY</a> <a href="classes.html" >CLASSES</a> <a class="current_page" href="workshop.html">WORKSHOPS</a> <a href="javascript:void(0);" class="icon" onclick="myFunction()"> <i class="fa fa-bars"></i></a> </div>
+</header>
+<main>
+  <h1 class="title">WORKSHOPS</h1>
+  <p class="paragraph">Our Introduction to Calisthenics work-shops is designed to teach the basics of Calisthenics to people of all ages and fitness levels. Whether it be your gym, work-place or school.</p>
+  <div class="videowrapper">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/cZFGc4iadwU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="workshop" id="mucle-ups">
+    <h3>MUSCLE-UPS</h3>
+    <p class="workshop_p">The muscle-up is an advanced CrossFit and gymnastic move. When performed correctly, the muscle-up works your entire upper body. Muscle-ups are a great way to build muscle and advance your training. You can perform a muscle-up on the bar or the rings, but either way, it may take a few tries before you master the technique. </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/kRFyD3xw9BI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="workshop" id="handstand">
+    <h3>HANDSTAND</h3>
+    <p class="workshop_p">The front handspring only takes a few seconds to execute, but it requires many hours of practice to get it right. Before you try a front handspring, you should be comfortable doing a handstand and front walkover, and it is required that you have a strong upper body. You should have some experience in gymnastics and a soft surface for practice! </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dU9rLHQIehA"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <div class="workshop" id="human-flag">
+    <h3>HUMAN-FLAG</h3>
+    <p class="workshop_p"> The human flag is one of the most difficult upper body exercises to do—without strong arm, shoulder, back, and core muscles, it is nearly impossible. But the challenge of the pose is also what makes it satisfying. With strength training and practice, completing a human flag is attainable. </p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bG0h7bSfxQI"  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  <script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script> 
+</main>
+<footer>&copy; 2018 by Irish Calisthenics Academy <a href="https://www.instagram.com/irishcalisthenicsacademy/" target="_blank"><img src="images/iconmonstr-instagram-11-24.png" alt="instagram icon"></a> <a href="https://www.youtube.com/channel/UCJhtdDdmAl1wSZhczm3xQ8Q" target="_blank"><img src="images/iconmonstr-youtube-6-24.png" alt="youtube icon"></a> <a href="https://www.facebook.com/IrishCalisthenicsAcademy/" target="_blank"><img src="images/iconmonstr-facebook-4-24.png" alt="facebook icon"></a><a href="sitemap.html">SITEMAP</a> <a href="disclaimer.html">DISCLAIMER</a> </footer>
+</body>
+</html>

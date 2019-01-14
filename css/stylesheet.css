@@ -1,0 +1,616 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+	padding: 1%;
+    font-family: 'Boogaloo', cursive;
+    background-color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: large;
+    border-bottom-left-radius: 0px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: black;
+    overflow: hidden;
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #59A04F;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    display: none;
+}
+/* Add an active class to highlight the current page */
+.current_page {
+    background-color: #59A04F;
+}
+.active {
+    color: black;
+}
+main {
+    overflow: auto;
+    margin-bottom: 1.5%;
+    height: auto;
+}
+.hero-box {
+    height: 338px;
+    background-image: url("../images/herobox.jpg");
+    background-size: cover;
+    margin: 1%;
+}
+.hero-box h1 {
+    color: #FEFEFE;
+    font-size: 50px;
+    padding-top: 120px;
+    padding-left: 60px;
+}
+.container {
+    position: relative;
+    width: 31.3%;
+    margin: 1%;
+    float: left;
+}
+/* Make the image to responsive */
+.image {
+    width: 100%;
+    height: auto;
+}
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    transform: scale(0);
+    transition: .3s ease;
+    background-color: #59A04F;
+}
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.container:hover .overlay {
+    transform: scale(1);
+}
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.text a {
+    color: white;
+    text-decoration: none;
+    font-size: large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text a:hover {
+    color: white;
+    font-size: x-large;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: bold;
+}
+footer {
+    color: black;
+    font-size: x-large;
+    width: 100%;
+    margin-top: 100px;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+}
+footer a {
+    color: #59A04F;
+    float: left;
+    margin: 0 1.5% 0 0;
+    padding: 0 1.5% 0 0;
+    text-decoration: none;
+    border-right: solid 1px #59A04F;
+}
+footer a:hover {
+    color: black;
+}
+.title {
+    color: #59A04F;
+    font-size: 200%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+.asideLeft {
+    width: 35%;
+    float: left;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+.profile {
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+    width: 100%;
+    height: auto;
+    border-width: medium;
+    border-style: solid;
+    border-color: #59A04F;
+}
+.sectionRight {
+    width: 55%;
+    float: right;
+    margin: 1%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+    border-top-right-radius: 20%;
+    margin-bottom: 5%;
+    border-bottom-left-radius: 20%;
+    border-width: thin;
+    border-style: solid;
+}
+.sectionRight h2 {
+    color: #59A04F;
+    font-size: xx-large;
+    margin: 0;
+}
+.sectionRight h4 {
+    color: #59A04F;
+    font-size: x-large;
+    margin: 0px
+}
+.sectionRight p {
+    font-size: 120%;
+}
+/*ICA STORY PAGE CSS */
+
+.aboutica-box {
+    height: 380px;
+    background-image: url("../images/herobox.jpg");
+    background-size: cover;
+    border: 8px solid #59A04F;
+}
+#about_us_container {
+    padding: 0;
+    margin: 0;
+}
+#about_us_content {
+    float: left;
+    width: 70%;
+    padding: 0;
+    font-size: large;
+}
+#about_us_content h4 {
+    color: #59A04F;
+    font-size: x-large;
+    margin-top: 4%;
+}
+#upcoming_events {
+    background-color: #59A04F;
+    float: left;
+    width: 26%;
+    margin-top: 2.5%;
+    margin-left: 2%;
+    margin-bottom: 2.5%;
+    padding: 1%;
+    overflow: visible;
+    color: white;
+}
+#upcoming_events_dates {
+    font-size: large;
+    border-bottom: 8px solid black;
+    margin-bottom: 4%;
+    padding-bottom: 4%;
+}
+#upcoming_events_link {
+    background-color: white;
+    margin: 4% 0;
+    padding: 4% 1%;
+    text-align: center;
+}
+#upcoming_events_link a {
+    text-decoration: none;
+    color: black;
+}
+#consent {
+    font-size: x-large;
+    color: black;
+    border-bottom: 8px solid #59A04F;
+    padding-bottom: 5px;
+}
+#update {
+    font-size: x-large;
+    color: #59A04F;
+    border-bottom: 8px solid black;
+    padding-bottom: 5px;
+}
+#map {
+    width: 57.5%;
+    float: left;
+}
+#contact_us {
+    width: 40%;
+    float: left;
+    margin-bottom: 2.5%;
+    margin-left: 2.5%;
+    margin-right: 0;
+    margin-top: 0;
+}
+#contact_us p {
+    font-size: medium;
+}
+#contact_us a {
+    text-decoration: none;
+    color: inherit;
+}
+#contact_us a:hover {
+    color: #59A04F;
+}
+#contact_us_title {
+    font-size: xx-large;
+    color: #59A04F;
+    border-bottom: 8px solid black;
+    padding: 0 0 1% 0;
+    width: 100%;
+    margin: 0 0 2.5% 0;
+}
+#irishcalisthenicsacademy {
+    color: #59A04F;
+    font-size: x-large;
+    width: 100%;
+    margin: 0;
+}
+#contact_us_form {
+    width: 100%;
+    margin: 0;
+}
+#contact_us_form input[type=text] {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #88CB95;
+    color: grey;
+}
+#contact_us_form textarea {
+    width: 100%;
+    height: 160px;
+    padding: 10px 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+    background-color: #88CB95;
+    color: black;
+    resize: none;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,1.00) 15.80%,rgba(136,203,149,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(255,255,255,1.00) 15.80%,rgba(136,203,149,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(255,255,255,1.00) 15.80%,rgba(136,203,149,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(255,255,255,1.00) 15.80%,rgba(136,203,149,1.00) 100%);
+}
+#contact_us_form input[type=submit] {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    background-color: #59A04F;
+    border: none;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+#contact_us_form input[type=submit]:hover {
+    background-color: black;
+}
+/* CSS for Disclaimer Page*/
+#disclaimer_content a {
+    text-decoration: none;
+    color: inherit;
+}
+#disclaimer_content a:hover {
+    color: #59A04F;
+}
+#sitemap_content li {
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+}
+#sitemap_content li a {
+    margin: 0;
+    display: block;
+    text-decoration: none;
+    padding: 1%;
+    color: black;
+}
+#sitemap_content li a:hover {
+    background-color: #59A04F;
+    text-align: left;
+    color: white;
+    font-weight: bold;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 1%;
+}
+th {
+    color: #59A04F;
+    font-size: x-large;
+}
+tr:nth-child(even) {
+    background-color: black;
+    color: white;
+}
+iframe {
+    width: 100%;
+}
+.workshop {
+    position: relative;
+    width: 31.3%;
+    margin: 1%;
+    padding: 0;
+    float: left;
+}
+.workshop_p {
+    width: 100%;
+    height: 250px;
+    font-size: larger;
+}
+#mucle-ups h3 {
+    font-size: x-large;
+    border-bottom: 8px solid #59A04F;
+    ;
+    padding-bottom: 1%;
+}
+#handstand h3 {
+    font-size: x-large;
+    color: #59A04F;
+    ;
+    border-bottom: 8px solid black;
+    padding-bottom: 1%;
+}
+#human-flag h3 {
+    font-size: x-large;
+    border-bottom: 8px solid #59A04F;
+    ;
+    padding-bottom: 1%;
+}
+.gallery-container {
+    width: 100%;
+}
+.mySlides {
+    width: 100%;
+    display: none;
+}
+.scroll-right {
+    float: right;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: black;
+    color: #FFFFFF;
+    font-size: large;
+}
+.scroll-left {
+    float: left;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-right: 2%;
+    padding-left: 2%;
+    background-color: black;
+    color: #FFFFFF;
+    font-size: large;
+}
+button:hover {
+    background-color: #59A04F;
+}
+button {
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#disclaimer {
+	padding: 1%;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 660px) {
+.topnav a:not(:first-child) {
+    display: none;
+}
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 660px) {
+.topnav.responsive {
+    position: relative;
+}
+.topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+}
+
+@media (max-width:920px) {
+.workshop_p {
+    font-size: large;
+}
+}
+
+@media (max-width:715px) {
+footer {
+    font-size: medium;
+}
+}
+
+/*TABLET*/
+@media (max-width:660px) {
+header {
+    margin: 1.5%;
+}
+.hero-box h1 {
+    font-size: 35px;
+    text-align: center;
+}
+.container {
+    width: 48%;
+    margin: 1%;
+}
+.sectionRight {
+    width: 90%;
+    float: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 1%;
+    border-top-right-radius: 0%;
+    border-bottom-left-radius: 0%;
+    border-width: thin;
+    border-style: solid;
+    font-size: large;
+}
+.sectionRight h1 {
+    color: #59A04F;
+    font-size: xx-large;
+    text-align: center;
+    margin: 0;
+}
+.sectionRight h4 {
+    color: #59A04F;
+    font-size: x-large;
+    margin: 0;
+    text-align: center;
+}
+.asideLeft img {
+    width: 100%;
+}
+.asideLeft {
+    width: 90%;
+    float: none;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 30px;
+}
+.aboutica-box {
+    height: 380px;
+    background-image: url("../images/herobox.jpg");
+    background-size: cover;
+    border: 2px solid #59A04F;
+}
+#about_us_content {
+    width: 98%;
+    margin: 1%;
+}
+#upcoming_events {
+    width: 96%;
+    margin: 1%;
+    padding: 1%;
+}
+.mySlides {
+    width: 98%;
+    margin: 0 1%;
+}
+#map {
+    width: 98%;
+    margin: 1%;
+}
+#contact_us {
+    width: 98%;
+    float: left;
+    margin: 1%;
+}
+table {
+    width: 98%;
+    margin: 1%;
+}
+.paragraph {
+    margin: 1%;
+}
+.title {
+    margin-left: 1%;
+}
+#upcoming_events_link {
+    width: 50%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.workshop {
+    width: 98%;
+    margin: 1%;
+}
+.workshop_p {
+    width: 100%;
+    height: auto;
+}
+}
+
+@media (max-width:510px) {
+footer {
+    font-size: x-small;
+}
+}
+
+/*MOBILE*/
+@media (max-width:400px) {
+.hero-box h1 {
+    font-size: 28px;
+    text-align: center;
+    padding-left: 0px;
+}
+.container {
+    width: 98%;
+}
+.hidden-xs {
+    display: none;
+}
+footer {
+    font-size: x-small;
+}
+.aboutica-box {
+    display: none;
+}
+.logo
+	{
+		display: none;
+	}	
+	body{
+		padding: 1%;
+	}
+}
