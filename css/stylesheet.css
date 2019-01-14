@@ -481,9 +481,9 @@ footer {
 
 /*TABLET*/
 @media (max-width:660px) {
-header {
-    margin: 1.5%;
-}
+
+    
+
 .hero-box h1 {
     font-size: 35px;
     text-align: center;
@@ -558,12 +558,12 @@ table {
     width: 98%;
     margin: 1%;
 }
-.paragraph {
-    margin: 1%;
-}
-.title {
-    margin-left: 1%;
-}
+
+
+
+
+ 
+
 #upcoming_events_link {
     width: 50%;
     padding-top: 2%;
@@ -573,7 +573,7 @@ table {
 }
 .workshop {
     width: 98%;
-    margin: 1%;
+
 }
 .workshop_p {
     width: 100%;
@@ -588,7 +588,7 @@ footer {
 }
 
 /*MOBILE*/
-@media (max-width:400px) {
+@media (max-width:410px) {
 .hero-box h1 {
     font-size: 28px;
     text-align: center;
