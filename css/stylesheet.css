@@ -588,7 +588,7 @@ footer {
 }
 
 /*MOBILE*/
-@media (max-width:410px) {
+@media (max-width:420px) {
 .hero-box h1 {
     font-size: 28px;
     text-align: center;
